@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-25T04:56:17.552Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="ok2dpkjYKJnddeiUyb9x" version="13.8.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-25T05:02:29.570Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="Qw-w5g5538WEKlzgwqa4" version="13.8.2" type="github" pages="2">
   <diagram id="G5VV3Hv0_vD7yxeHfHWx" name="Causality Chain">
     <mxGraphModel dx="1038" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -16,8 +16,8 @@
         <mxCell id="4Yoh-kfnpaWLGaFxiHtS-0" value="Trade War" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;glass=0;strokeWidth=1;shadow=0;" parent="lR6rKzhFCXqIzUD3Z709-1" vertex="1">
           <mxGeometry x="110" y="380" width="70" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4Yoh-kfnpaWLGaFxiHtS-1" value="Manufacturing Relocations" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;glass=0;strokeWidth=1;shadow=0;" parent="lR6rKzhFCXqIzUD3Z709-1" vertex="1">
-          <mxGeometry x="620" y="430" width="120" height="40" as="geometry" />
+        <mxCell id="4Yoh-kfnpaWLGaFxiHtS-1" value="Relocations of&lt;br&gt;Manufacturing&lt;br&gt;Sourcing" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;glass=0;strokeWidth=1;shadow=0;" parent="lR6rKzhFCXqIzUD3Z709-1" vertex="1">
+          <mxGeometry x="620" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4Yoh-kfnpaWLGaFxiHtS-2" value="Tariff Costs" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;" parent="lR6rKzhFCXqIzUD3Z709-1" vertex="1">
           <mxGeometry x="345" y="280" width="80" height="80" as="geometry" />
