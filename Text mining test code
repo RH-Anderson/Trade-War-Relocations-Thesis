@@ -1,0 +1,45 @@
+import pprint, sys, time, re, os    #Default modules
+import relocations_project_module  #Custom modules
+
+raw_sources_names = os.listdir(os.path.join('.','Raw documents'))   #Gets the names of all folders with raw sources
+
+#Time functions
+def take_time():
+    return time.perf_counter()
+
+def time_elapsed(initial,end):
+    return end - initial
+
+
+
+#Processing function
+def process_text(inputtext):
+
+    text = inputtext.lower()
+    for compound in relocations_project_module.compounds:      #Makes compound words into one term, e.g. 'trade war' -> trade_war
+        text = text.replace(compound[0].lower(), compound[1].lower())
+
+    for delimiter in relocations_project_modules.delimiters:    #Find/replacing other delimiters with master delimiter
+        text = text.replace(delimiter, relocations_project_module.masterDelimiter)
+
+    text_list=text.split(relocations_project_module.masterDelimiter)
+
+    wordcount = {}
+
+    for word in text_list:
+        wordcount.setdefault(word,0)
+        wordcount[word] = wordcount[word] + 1
+
+    for term in relocations_project_module.droplist:                       #Meaningless words to drop from the final output, e.g. 'the'
+        wordcount.pop(term,None)    #The None argument here is needed in case the key given to the first argument doesn't exist
+
+    return wordcount
+
+
+for abc in raw_sources_names:
+    rawfile = open(os.path.join('.','Raw documents', abc, abc + '.txt'), mode = 'r', encoding = 'utf-8')
+    inputtext = rawfile.read()
+    outputfile = open(os.path.join('.','Output.txt'), mode = 'a', encoding = 'utf-8')
+    outputfile.write('\n\n' + abc + '_output = ' + str(process_text(inputtext)))
+    rawfile.close()
+    outputfile.close()
